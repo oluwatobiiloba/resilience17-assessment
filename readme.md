@@ -272,13 +272,13 @@ npm install
 node app.js
 ```
 
-Server runs on `http://localhost:3000`
+Server runs on `https://resilience17-assessment-dbc3.onrender.com`
 
 2. **Test with curl:**
 
 **Successful DEBIT:**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -291,7 +291,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Pending CREDIT (future date):**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -304,7 +304,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Case-insensitive keywords:**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -317,7 +317,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Currency mismatch error:**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -330,7 +330,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Insufficient funds error:**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -343,7 +343,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Unsupported currency:**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -356,7 +356,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Same account error:**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -368,7 +368,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Account not found:**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -380,7 +380,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Invalid amount (negative):**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -393,7 +393,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Invalid amount (decimal):**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -406,7 +406,7 @@ curl -X POST http://localhost:3000/payment-instructions \
 
 **Malformed instruction:**
 ```bash
-curl -X POST http://localhost:3000/payment-instructions \
+curl -X POST https://resilience17-assessment-dbc3.onrender.com/payment-instructions \
   -H 'Content-Type: application/json' \
   -d '{
     "accounts": [
@@ -467,7 +467,7 @@ All assessment test cases have been validated:
 To deploy this application:
 
 1. **Render:**
-- APP_URL=
+- APP_URL=https://resilience17-assessment-dbc3.onrender.com
 
 ## Implementation Notes
 

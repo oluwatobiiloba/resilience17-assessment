@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_URL="${BASE_URL:-http://localhost:3000}"
+BASE_URL="${BASE_URL:-https://resilience17-assessment-dbc3.onrender.com}"
 
 echo "======================================"
 echo "Payment Instructions API Test Suite"
